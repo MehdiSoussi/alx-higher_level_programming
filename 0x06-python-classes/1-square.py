@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 class Square():
     """Class representing a square with an attribute private size"""
     def __init__(self, size):
