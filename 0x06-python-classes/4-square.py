@@ -7,14 +7,19 @@ class Square():
 
     def __init__(self, size=0):
         """ Initializing the instances"""
+
         self.__size = size
 
     @property
       def size(self):
+          """ size proprety"""
+
            return self.__size
 
     @size.setter
       def size(self, value):
+          """ size setter"""
+
            if isinstance(size, int):
                 if size > 0:
                     self.__size = size
@@ -24,4 +29,5 @@ class Square():
                 raise TypeError("size must be an integer")
 
     def area(self):
+        """ area method"""
         return self.__size * self.__size
